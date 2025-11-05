@@ -89,7 +89,7 @@ public class Program {
 
         int minAge = people.stream()
                 .map(Person::getAge)
-                .reduce(1, Integer::min);
+                .reduce(Integer.MAX_VALUE, Integer::min);
         return minAge;
 
         /*int minAge = Integer.MAX_VALUE;
